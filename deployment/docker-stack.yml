@@ -6,7 +6,7 @@ services:
     restart: always
 
   website:
-    image: serdarmumcu/mybookstore:latest
+    image: serdarmumcu/website:latest
     links:
       - product-service
     ports:

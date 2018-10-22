@@ -6,10 +6,10 @@ services:
     volumes:
       - ./product:/usr/src/app
     ports:
-      - 8080:5000
+      - 8080:80
 
   website:
-    image: php:apache
+    build: ./website
     volumes:
       - ./website:/var/www/html
     ports:
